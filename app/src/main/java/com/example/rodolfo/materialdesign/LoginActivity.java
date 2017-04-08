@@ -4,6 +4,7 @@ import android.os.Trace;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -37,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
         Retrofit client = ApiClient.getClient();
         ApiInterface service = client.create(ApiInterface.class);                               // Creamos la interface para poder realizar las conexiones
 
+        Log.w("Retrofit","Connection Start");
         Call<String> call = service.loginValidation(username, password);                        // Creamos una llamada al servidor, a la ruta loginValidation definida en ApiInterface
         call.enqueue(new Callback<String>() {                                                   // Colocamos nuestra llamada en una cola para que se realice de manera asincrona
             @Override
@@ -48,6 +50,8 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<String> call, Throwable t){                              // Se ejecuta cuando ocurre un error al conectarse al servidor (Error de red)
                 call.cancel();
+                Log.w("Retrofit","Connection Lost");
+                Log.w("Retrofit",t.getMessage());
             }
         });
 
