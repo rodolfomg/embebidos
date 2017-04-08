@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
 
-    public static final String BASE_URL = "http://192.168.15.7:8888/api/";                // Nuestro server con nuestra API
+    public static final String BASE_URL = "http://api.perceptron.mx/api/";      // Nuestro server con nuestra API
     private static Retrofit retrofit = null;                                    // Objeto retrofit para las conexiones
 
     public static Retrofit getClient() {
