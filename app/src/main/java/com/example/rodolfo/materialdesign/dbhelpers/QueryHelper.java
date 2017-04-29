@@ -63,7 +63,7 @@ public class QueryHelper {
     }
 
     public List<User> getAllUsers() {
-        List<User> users = new ArrayList<User>();
+        List<User> users = new ArrayList<>();
 
         Cursor cursor = database.query(DBHelper.TABLE_USERS,
                 allColumns, null, null, null, null, null);
