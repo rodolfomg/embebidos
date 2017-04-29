@@ -3,4 +3,11 @@
     <string name="user">User</string>
     <string name="pass">Pass</string>
     <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="SignUp_Info">Ingresa tus datos personales</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_acount">Create Acount</string>
 </resources>
