@@ -1,15 +1,14 @@
-package com.example.rodolfo.materialdesign.API;
+package com.example.rodolfo.materialdesign.api;
 
 /**
  * Created by rodolfo on 11/03/17.
  */
 
-import com.example.rodolfo.materialdesign.Models.User;
+import com.example.rodolfo.materialdesign.models.User;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
-import retrofit2.http.Query;
 
 public interface ApiInterface {
     @GET("{username}/{password}")                                       // Indicamos el tipo de conexion y la ruta a la que nos conectaremos

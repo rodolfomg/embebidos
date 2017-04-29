@@ -1,4 +1,4 @@
-package com.example.rodolfo.materialdesign.API;
+package com.example.rodolfo.materialdesign.api;
 
 /**
  * Created by rodolfo on 11/03/17.

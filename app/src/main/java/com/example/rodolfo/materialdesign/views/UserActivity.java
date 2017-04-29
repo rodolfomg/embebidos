@@ -1,12 +1,13 @@
-package com.example.rodolfo.materialdesign;
+package com.example.rodolfo.materialdesign.views;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
-import com.example.rodolfo.materialdesign.API.ApiClient;
-import com.example.rodolfo.materialdesign.API.ApiInterface;
-import com.example.rodolfo.materialdesign.Models.User;
+import com.example.rodolfo.materialdesign.api.ApiClient;
+import com.example.rodolfo.materialdesign.api.ApiInterface;
+import com.example.rodolfo.materialdesign.models.User;
+import com.example.rodolfo.materialdesign.R;
 
 import retrofit2.Call;
 import retrofit2.Callback;

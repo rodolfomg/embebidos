@@ -1,4 +1,4 @@
-package com.example.rodolfo.materialdesign.Models;
+package com.example.rodolfo.materialdesign.models;
 
 /**
  * Created by rodolfo on 11/03/17.

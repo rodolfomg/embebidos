@@ -1,6 +1,5 @@
 package com.example.rodolfo.materialdesign;
 
-import android.os.Trace;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,8 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.rodolfo.materialdesign.API.ApiClient;
-import com.example.rodolfo.materialdesign.API.ApiInterface;
+import com.example.rodolfo.materialdesign.api.ApiClient;
+import com.example.rodolfo.materialdesign.api.ApiInterface;
 
 import retrofit2.Call;
 import retrofit2.Callback;

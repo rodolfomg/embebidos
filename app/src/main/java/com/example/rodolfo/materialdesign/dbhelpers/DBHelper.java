@@ -1,4 +1,4 @@
-package com.example.rodolfo.materialdesign.DBHelpers;
+package com.example.rodolfo.materialdesign.dbhelpers;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

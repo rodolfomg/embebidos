@@ -1,4 +1,4 @@
-package com.example.rodolfo.materialdesign.DBHelpers;
+package com.example.rodolfo.materialdesign.dbhelpers;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,9 +6,7 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.example.rodolfo.materialdesign.Models.User;
-
-import org.w3c.dom.Comment;
+import com.example.rodolfo.materialdesign.models.User;
 
 import java.util.ArrayList;
 import java.util.List;
