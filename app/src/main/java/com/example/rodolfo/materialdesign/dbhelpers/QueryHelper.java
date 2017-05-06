@@ -38,6 +38,7 @@ public class QueryHelper {
 
     public User createUser(String username, String password, String email, String phone) {
         ContentValues values = new ContentValues();
+
         values.put(DBHelper.COLUMN_USERNAME, username);
         values.put(DBHelper.COLUMN_PASSWORD, password);
         values.put(DBHelper.COLUMN_EMAIL, email);
