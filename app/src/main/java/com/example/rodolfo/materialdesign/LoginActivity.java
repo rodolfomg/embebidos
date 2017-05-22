@@ -1,5 +1,6 @@
 package com.example.rodolfo.materialdesign;
 
+import android.content.Intent;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,11 +10,14 @@ import android.widget.Toast;
 
 import com.example.rodolfo.materialdesign.api.ApiClient;
 import com.example.rodolfo.materialdesign.api.ApiInterface;
+import com.example.rodolfo.materialdesign.views.ListUsersActivity;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
+
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -31,6 +35,10 @@ public class LoginActivity extends AppCompatActivity {
         String password = iPass.getText().toString();
 
         this.loginProcess(username, password);
+
+        Intent intent = new Intent(this, ListUsersActivity.class);
+        intent.putExtra(EXTRA_MESSAGE, "hello");
+        startActivity(intent);
     }
 
     private boolean loginProcess(String username, String password){

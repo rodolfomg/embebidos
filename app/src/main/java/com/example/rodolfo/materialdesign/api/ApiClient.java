@@ -1,7 +1,8 @@
 package com.example.rodolfo.materialdesign.api;
 
-/**
- * Created by rodolfo on 11/03/17.
+/*
+  Created by rodolfo on 11/03/17.
+  API Client
  */
 
 import android.util.Log;
@@ -14,19 +15,19 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
 
-    private static final String BASE_URL = "http://148.234.36.60:8888/api/";      // Nuestro server con nuestra API
-    private static Retrofit retrofit = null;                                    // Objeto retrofit para las conexiones
+    private static final String BASE_URL = "http://embebidos.educacioncreativa.org/api/";   // Nuestro server con nuestra API
+    private static Retrofit retrofit = null;                                                // Objeto retrofit para las conexiones
 
     public static Retrofit getClient() {
-        if (retrofit == null){                                                  // Nos aseguramos que no se haya creado un objeto retrofit
+        if (retrofit == null){                                                              // Nos aseguramos que no se haya creado un objeto retrofit
             Gson gson = new GsonBuilder()
                     .setLenient()
                     .create();
 
-            retrofit = new Retrofit.Builder()                                   // Inicializamos el objeto Retrofit
-                        .baseUrl(BASE_URL)                                      // Indicamos a cual sitio se estará conectando
-                        .addConverterFactory(GsonConverterFactory.create(gson)) // Indicamos cual será nuestro serializador y deserializador de objetos (JSON)
-                        .build();                                               // Construimos el objeto
+            retrofit = new Retrofit.Builder()                                               // Inicializamos el objeto Retrofit
+                        .baseUrl(BASE_URL)                                                  // Indicamos a cual sitio se estará conectando
+                        .addConverterFactory(GsonConverterFactory.create(gson))             // Indicamos cual será nuestro serializador y deserializador de objetos (JSON)
+                        .build();                                                           // Construimos el objeto
             Log.w("Retrofit","Retrofit Start");
         }
         return retrofit;

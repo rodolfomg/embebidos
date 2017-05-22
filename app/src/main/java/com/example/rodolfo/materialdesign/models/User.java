@@ -2,6 +2,7 @@ package com.example.rodolfo.materialdesign.models;
 
 /**
  * Created by rodolfo on 11/03/17.
+ * User
  */
 
 public class User {
@@ -13,6 +14,12 @@ public class User {
 
     public User() {
         this.id = 0;
+    }
+
+    public User(String username, String email, String phone) {
+        this.username = username;
+        this.email = email;
+        this.phone = phone;
     }
 
     public long getId() {
